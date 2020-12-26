@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html, body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    /* font-family: sans-serif; */
+    color #222222;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+.section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section-image{
+    width: 70%;
+}
+
+.section-content h2 {
+    margin: 3rem 0 1.5rem;
+}
+
+.section-content p {
+    max-width: 80%;
+    margin-bottom: 3rem;
+}
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.gray-text {
+    color: #979797;
+}
+
+/** Header **/
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .links a {
+    color: #2b2b2b;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 24px;
+    color: #2b2b2b;
+    font-weight: 500;
+}
+
+.logo:before {
+    content: "";
+    display: inline-block;
+    width: 31px;
+    height: 28px;
+    background: url('../images/icon.png');
+    background-size: cover;
+    margin-right:10px;
+    vertical-align: middle;
+}
+
+/** Social Icons **/
+.social-icon {
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    background: #0A84FF;
+    border-radius: 10px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.social-icon:first-child{
+    margin-right:1rem;
+}
+
+.facebook:before {
+    content:"";
+    display: inline-block;
+    width: 9px;
+    height: 36px;
+    background: url('../images/facebook.svg');
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+
+.instagram:before {
+    content:"";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url('../images/instagram.svg');
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+
+/** INTRO **/
+#intro {
+    background: url('../images/intro_bg-min.png');
+    background-size: cover;
+    height: 100vh;
+    padding: 2.8rem 0 0;
+}
+
+.intro-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro-content h1 {
+    margin-bottom: 30px;
+}
+
+.intro-content-text {
+    color: #2b2b2b;
+    max-width: 50%;
+    padding-top: 6%;
+}
+
+.intro-content-image {
+    padding-top: 7%;
+}
+
+.intro-content-image img {
+    max-width: 500px;
+}
+
+.intro-phones img {
+    width: 400px;
+}
+
+.store-btn {
+    display: inline-block;
+    margin-top: 30px;
+}
+.appstore-img {
+    width: 200px;
+    height: 59px;
+    margin-right: 10px;
+}
+
+.gplay-img {
+    width: 180px;
+    height: 59px;
+}
+
+
+/** FOOTER **/
+#footer {
+    text-align: center;
+    background: #fafafa;
+}
+
+#footer a {
+    color: #2b2b2b;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#footer h2 {
+   margin-bottom: 1rem;
+}
+
+#footer p {
+    max-width: 450px;
+    margin: auto;
+}
+
+#footer .social{
+    margin-top: 2rem;
+}
+
+.copyright {
+    font-size: 14px;
+    padding: 2rem 0;
+    text-align: center;
+    font-weight: 300;
+}
+
+/** MOBILE **/
+@media (max-width: 1024px){
+    .half-section-wrapper{
+        flex-direction: column;
+    }
+
+    .half-section{
+        text-align: center;
+        margin: auto;
+    }
+
+
+    section {
+        padding: 4rem 0;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav .links {
+        padding: 2rem;
+        display: none;
+    }
+
+    #intro {
+        height: auto;
+        padding: 2rem;
+    }
+    
+    #intro .social {
+	    display: none;
+    }
+    
+     #intro h1 {
+	     font-size: 40px;
+	     line-height: 40px;
+     }
+
+    .intro-content-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .intro-content-image img {
+        max-width: 300px;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .section-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-content {
+        padding: 0 2rem;
+    }
+
+    .section-image {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        padding: 3rem 0 0;
+    }
+
+    .section-content p {
+        max-width: 100%;
+    }
+    #footer h2 {
+        line-height: normal;
+    }
+
+    #footer p {
+        padding: 0 2rem;
+    }
+}
